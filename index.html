@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ristorante Pizzeria da Roma</title>
+  <style>
+    :root {
+      --legno-chiaro: #D2B48C;
+      --verde-oliva: #556B2F;
+      --beige: #FFF8DC;
+      --testo: #2F2F2F;
+      --grigio-chiaro: #e0e0e0;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--beige);
+      color: var(--testo);
+      font-size: 20px;
+    }
+
+    header {
+      background-color: var(--legno-chiaro);
+      color: black;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    section {
+      padding: 2rem 5%;
+    }
+
+    h2 {
+      color: var(--verde-oliva);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+    }
+
+    .divider {
+      border-top: 3px solid var(--grigio-chiaro);
+      margin: 3rem 0 2rem;
+    }
+
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+    }
+
+    .item img {
+      width: 180px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 1rem;
+      flex-shrink: 0;
+      border: 1px solid #ccc;
+    }
+
+    .item-text {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .item-title {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .item-desc {
+      font-size: 1.6rem;
+    }
+
+    .item-dessert, .item-bevanda {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+    }
+
+    .item-dessert img, .item-bevanda img {
+      width: 140px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    .item-dessert-text, .item-bevanda-text {
+      flex: 1;
+      font-size: 1.6rem;
+    }
+
+    .item-dessert .item-title {
+      display: flex;
+      justify-content: flex-start;
+      gap: 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .item-bevanda .item-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .item-bevanda .item-price {
+      font-size: 1.6rem;
+      margin-top: 0.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .item, .item-dessert, .item-bevanda {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .item img, .item-dessert img, .item-bevanda img {
+        margin-left: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ristorante Pizzeria da Roma</h1>
+    <p>Tradizione e accoglienza nel cuore della capitale</p>
+  </header>
+
+  <section>
+    <h2>Antipasti</h2>
+    <div class="item">
+      <div class="item-text">
+        <div class="item-title">
+          <span>Bruschette miste</span>
+          <span>€5</span>
+        </div>
+        <div class="item-desc">Pomodoro, basilico, funghi, olive e paté</div>
+      </div>
+      <img src="images/bruschette.jpg" alt="Bruschette">
+    </div>
+
+    <div class="item">
+      <div class="item-text">
+        <div class="item-title">
+          <span>Fiori di zucca fritti</span>
+          <span>€6</span>
+        </div>
+        <div class="item-desc">Ripieni di mozzarella e alici</div>
+      </div>
+      <img src="images/fiori_di_zucca.jpg" alt="Fiori di zucca">
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Primi di Mare</h2>
+    <div class="item">
+      <div class="item-text">
+        <div class="item-title">
+          <span>Spaghetti alle vongole</span>
+          <span>€13</span>
+        </div>
+        <div class="item-desc">Con vongole veraci, aglio e prezzemolo</div>
+      </div>
+      <img src="images/vongole.jpg" alt="Spaghetti alle vongole">
+    </div>
+
+    <div class="item">
+      <div class="item-text">
+        <div class="item-title">
+          <span>Risotto alla pescatora</span>
+          <span>€14</span>
+        </div>
+        <div class="item-desc">Frutti di mare, pomodorini, prezzemolo</div>
+      </div>
+      <img src="images/risotto_pescatora.jpg" alt="Risotto">
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Dolci</h2>
+    <div class="item-dessert">
+      <img src="images/tiramisu.jpg" alt="Tiramisù">
+      <div class="item-dessert-text">
+        <div class="item-title">
+          <span>Tiramisù</span>
+          <span>€5</span>
+        </div>
+        <div class="item-desc">Mascarpone, savoiardi, caffè e cacao</div>
+      </div>
+    </div>
+
+    <div class="item-dessert">
+      <img src="images/panna_cotta.jpg" alt="Panna cotta">
+      <div class="item-dessert-text">
+        <div class="item-title">
+          <span>Panna cotta</span>
+          <span>€4</span>
+        </div>
+        <div class="item-desc">Con salsa ai frutti di bosco</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Bevande</h2>
+    <div class="item-bevanda">
+      <img src="images/acqua.jpg" alt="Acqua">
+      <div class="item-bevanda-text">
+        <div class="item-title">Acqua naturale</div>
+        <div class="item-price">€1,50</div>
+      </div>
+    </div>
+
+    <div class="item-bevanda">
+      <img src="images/vino_rosso.jpg" alt="Vino Rosso">
+      <div class="item-bevanda-text">
+        <div class="item-title">Vino della casa (rosso)</div>
+        <div class="item-price">€8</div>
+      </div>
+    </div>
+
+    <div class="item-bevanda">
+      <img src="images/coca_cola.jpg" alt="Coca Cola">
+      <div class="item-bevanda-text">
+        <div class="item-title">Coca-Cola</div>
+        <div class="item-price">€2,50</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
