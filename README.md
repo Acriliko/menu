@@ -13,8 +13,7 @@
 - ✅ Accesso tramite **QR code**
 - ✅ Layout ottimizzato per smartphone e tablet
 - ✅ Visualizzazione per **categorie di piatti**
-- ✅ Descrizioni dettagliate con **ingredienti** e **allergeni**
-- ✅ Supporto **multilingua**
+- ✅ Descrizioni dettagliate con **ingredienti**
 - ✅ Facile da aggiornare con i piatti reali del ristorante
 
 ---
@@ -23,15 +22,5 @@
 
 - HTML5 / CSS3  
 - JavaScript  
-- *(Aggiungi qui: React, Vue, Next.js, Bootstrap, Firebase, ecc. – a seconda di cosa stai usando)*
 
 ---
-
-## 📦 Installazione (locale)
-
-```bash
-git clone https://github.com/tuo-username/menu-digitale.git
-cd menu-digitale
-# Installa le dipendenze, se presenti
-npm install
-npm run dev
